@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b46">
+  <meta name="description" content="Laboratório Virtual de Química: explore simulações, experimentos e conceitos científicos.">
+  <title>Laboratório Virtual de Química</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Laboratório Virtual de Química - início">
+      <span class="brand-mark">⚗</span>
+      <span><strong>LABORATÓRIO VIRTUAL</strong><small>DE QUÍMICA</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#laboratorios">Laboratórios</a>
+      <a href="#experimentos">Experimentos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <a class="header-cta" href="#experimentos">Entrar no laboratório <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> CIÊNCIA • EXPERIMENTAÇÃO • DESCOBERTA</div>
+          <h1>A Química ganha<br><em>vida na prática.</em></h1>
+          <p>Explore fenômenos, manipule variáveis e investigue transformações da matéria em um ambiente virtual de aprendizagem.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#experimentos">Explorar experimentos <span>→</span></a>
+            <a class="btn btn-ghost" href="#laboratorios">Conhecer os laboratórios</a>
+          </div>
+          <div class="hero-meta">
+            <span><b>08</b> áreas de conhecimento</span>
+            <i></i>
+            <span><b>04</b> simulações iniciais</span>
+            <i></i>
+            <span>Ensino Médio + EJA</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Ilustração de laboratório químico">
+          <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+          <div class="molecule molecule-a"><b></b><b></b><b></b><i></i><i></i></div>
+          <div class="molecule molecule-b"><b></b><b></b><i></i></div>
+          <div class="glass-card">
+            <div class="glass-label">SIMULAÇÃO EM TEMPO REAL</div>
+            <svg viewBox="0 0 300 310" role="img" aria-label="Frasco de laboratório com líquido azul">
+              <defs>
+                <linearGradient id="liquid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#72d8d2"/><stop offset="1" stop-color="#168eaa"/></linearGradient>
+                <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".8"/><stop offset="1" stop-color="#b7e8e8" stop-opacity=".12"/></linearGradient>
+              </defs>
+              <path d="M118 32h64v70l60 137c9 20-4 36-26 36H84c-22 0-35-16-26-36l60-137z" fill="url(#glass)" stroke="#d8f5f2" stroke-width="5"/>
+              <path d="M99 184h102l41 55c9 20-4 36-26 36H84c-22 0-35-16-26-36z" fill="url(#liquid)" opacity=".92"/>
+              <path d="M116 185c30-10 61 9 88 0" fill="none" stroke="#d8ffff" stroke-width="4" opacity=".8"/>
+              <path d="M128 32h44M128 45h44" stroke="#d8f5f2" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="111" cy="218" r="5" fill="#d8ffff" opacity=".7"/><circle cx="180" cy="244" r="8" fill="#d8ffff" opacity=".5"/><circle cx="146" cy="260" r="4" fill="#d8ffff" opacity=".8"/>
+            </svg>
+            <div class="glass-caption"><span class="status-dot"></span> Bancada pronta para explorar</div>
+          </div>
+          <div class="floating-chip chip-top">pH <strong>7,0</strong></div>
+          <div class="floating-chip chip-bottom"><span>ΔT</span><strong>+12,4 °C</strong></div>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>01 / APRENDER FAZENDO</span><span class="scroll-line"></span><span>ROLE PARA EXPLORAR</span></div>
+    </section>
+
+    <section class="intro section-wrap" id="sobre">
+      <div class="section-kicker">UM ESPAÇO PARA INVESTIGAR</div>
+      <div class="intro-grid">
+        <h2>Mais do que observar.<br><em>Experimente.</em></h2>
+        <div><p>O laboratório aproxima conceitos abstratos de situações observáveis. Cada atividade combina fundamentos científicos, experimentação guiada e interpretação de resultados.</p><p class="muted">Desenvolvido para apoiar aulas de Química no Ensino Médio regular e na Educação de Jovens e Adultos.</p></div>
+      </div>
+      <div class="feature-strip">
+        <div><span class="feature-icon">⌁</span><b>Simulações interativas</b><small>Altere variáveis e observe respostas.</small></div>
+        <div><span class="feature-icon">∑</span><b>Ciência quantitativa</b><small>Explore cálculos e gráficos.</small></div>
+        <div><span class="feature-icon">◎</span><b>Aprendizagem ativa</b><small>Investigue, registre e conclua.</small></div>
+      </div>
+    </section>
+
+    <section class="labs-section" id="laboratorios">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><div class="section-kicker">MAPA DO CONHECIMENTO</div><h2>Explore os <em>laboratórios</em></h2></div>
+          <p>Oito áreas conectadas aos principais campos da Química e às suas aplicações no cotidiano.</p>
+        </div>
+        <div class="lab-grid" id="labGrid">
+          <article class="lab-card"><span class="lab-number">01</span><div class="lab-symbol">⚛</div><h3>Química Geral</h3><p>Matéria, propriedades, misturas, densidade e transformações.</p><a href="#experimentos" data-filter="geral">Explorar área <b>↗</b></a></article>
+          <article class="lab-card"><span class="lab-number">02</span><div class="lab-symbol">◉</div><h3>Ácidos e Bases</h3><p>pH, indicadores, neutralização, soluções e titulação.</p><a href="#experimentos" data-filter="acidos">Explorar área <b>↗</b></a></article>
+          <article class="lab-card"><span class="lab-number">03</span><div class="lab-symbol">⌬</div><h3>Química Orgânica</h3><p>Estruturas moleculares, funções orgânicas e reações.</p><a href="#experimentos" data-filter="organica">Explorar área <b>↗</b></a></article>
+          <article class="lab-card"><span class="lab-number">04</span><div class="lab-symbol">♨</div><h3>Físico-Química</h3><p>Energia, cinética, equilíbrio e propriedades dos gases.</p><a href="#experimentos" data-filter="fisico">Explorar área <b>↗</b></a></article>
+          <article class="lab-card"><span class="lab-number">05</span><div class="lab-symbol">⌖</div><h3>Química Analítica</h3><p>Concentração, preparo de soluções e métodos de análise.</p><a href="#experimentos" data-filter="analitica">Explorar área <b>↗</b></a></article>
+          <article class="lab-card"><span class="lab-number">06</span><div class="lab-symbol">ϟ</div><h3>Eletroquímica</h3><p>Pilhas, eletrólise, corrosão e eletrodeposição.</p><a href="#experimentos" data-filter="eletro">Explorar área <b>↗</b></a></article>
+          <article class="lab-card"><span class="lab-number">07</span><div class="lab-symbol">◌</div><h3>Química Ambiental</h3><p>Água, tratamento, qualidade ambiental e contaminantes.</p><a href="#experimentos" data-filter="ambiental">Explorar área <b>↗</b></a></article>
+          <article class="lab-card"><span class="lab-number">08</span><div class="lab-symbol">⌘</div><h3>Bioquímica</h3><p>Biomoléculas, enzimas, fermentação e metabolismo.</p><a href="#experimentos" data-filter="bio">Explorar área <b>↗</b></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experiments-section section-wrap" id="experimentos">
+      <div class="section-heading">
+        <div><div class="section-kicker">BANCADA DIGITAL</div><h2>Experimentos <em>disponíveis</em></h2></div>
+        <p>Selecione uma experiência para abrir a bancada, ajustar parâmetros e analisar os resultados.</p>
+      </div>
+      <div class="experiment-toolbar">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar experimento..." aria-label="Buscar experimento"></label>
+        <div class="filter-pills" id="filterPills">
+          <button class="filter-pill active" data-filter="todos">Todos</button>
+          <button class="filter-pill" data-filter="acidos">Ácidos e bases</button>
+          <button class="filter-pill" data-filter="analitica">Soluções</button>
+          <button class="filter-pill" data-filter="eletro">Eletroquímica</button>
+          <button class="filter-pill" data-filter="fisico">Termoquímica</button>
+        </div>
+      </div>
+      <div class="experiment-grid" id="experimentGrid">
+        <article class="experiment-card" data-id="ph" data-category="acidos"><div class="exp-art art-ph"><span>pH</span><div class="test-tubes"><i></i><i></i><i></i><i></i></div></div><div class="exp-content"><div class="exp-meta"><span>ÁCIDOS E BASES</span><span class="level">INTRODUTÓRIO</span></div><h3>Indicadores de pH</h3><p>Investigue o comportamento de um indicador inspirado no extrato de repolho roxo.</p><button class="text-link open-exp" data-exp="ph">Abrir experimento <b>→</b></button></div></article>
+        <article class="experiment-card" data-id="dilution" data-category="analitica"><div class="exp-art art-dilution"><span class="flask">♧</span><span class="formula">C₁V₁ = C₂V₂</span></div><div class="exp-content"><div class="exp-meta"><span>QUÍMICA ANALÍTICA</span><span class="level">INTERMEDIÁRIO</span></div><h3>Diluição de soluções</h3><p>Altere volumes e concentrações para preparar uma solução diluída.</p><button class="text-link open-exp" data-exp="dilution">Abrir experimento <b>→</b></button></div></article>
+        <article class="experiment-card" data-id="electro" data-category="eletro"><div class="exp-art art-electro"><span class="bolt">ϟ</span><span class="electro-label">Zn²⁺ + 2e⁻ → Zn</span></div><div class="exp-content"><div class="exp-meta"><span>ELETROQUÍMICA</span><span class="level">INTERMEDIÁRIO</span></div><h3>Eletrodeposição de zinco</h3><p>Estime a massa de zinco depositada a partir da corrente e do tempo.</p><button class="text-link open-exp" data-exp="electro">Abrir experimento <b>→</b></button></div></article>
+        <article class="experiment-card" data-id="calor" data-category="fisico"><div class="exp-art art-calor"><span class="thermo">🌡</span><span class="heat-wave">≈ ≈ ≈</span></div><div class="exp-content"><div class="exp-meta"><span>FÍSICO-QUÍMICA</span><span class="level">INTERMEDIÁRIO</span></div><h3>Calorimetria</h3><p>Calcule a energia térmica transferida a partir da variação de temperatura.</p><button class="text-link open-exp" data-exp="calor">Abrir experimento <b>→</b></button></div></article>
+      </div>
+      <div class="empty-state" id="emptyState" hidden>Nenhum experimento encontrado. Tente outro termo de busca.</div>
+    </section>
+
+    <section class="method-section" id="como-funciona">
+      <div class="section-wrap method-grid">
+        <div><div class="section-kicker">METODOLOGIA CIENTÍFICA</div><h2>Da pergunta<br>à <em>conclusão.</em></h2><p class="method-lead">Aprender Química é construir explicações a partir de evidências.</p></div>
+        <div class="steps">
+          <div class="step"><span>01</span><div><b>Observe</b><p>Conheça o fenômeno e identifique o problema.</p></div></div>
+          <div class="step"><span>02</span><div><b>Investigue</b><p>Formule hipóteses e modifique as variáveis.</p></div></div>
+          <div class="step"><span>03</span><div><b>Analise</b><p>Registre dados, faça cálculos e interprete evidências.</p></div></div>
+          <div class="step"><span>04</span><div><b>Conclua</b><p>Compare os resultados com a hipótese inicial.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience-section section-wrap">
+      <div class="audience-card"><div class="section-kicker">APRENDIZAGEM PARA TODOS</div><h2>Uma experiência.<br><em>Diferentes caminhos.</em></h2><div class="audience-columns"><div><span>01 / ENSINO MÉDIO</span><h3>Investigar e aprofundar</h3><p>Relações quantitativas, modelos, equações químicas, gráficos e interpretação de dados.</p></div><div><span>02 / EJA</span><h3>Conectar ao cotidiano</h3><p>Contextos de água, alimentos, saúde, materiais, ambiente e situações do mundo do trabalho.</p></div></div></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main"><a class="brand brand-footer" href="#inicio"><span class="brand-mark">⚗</span><span><strong>LABORATÓRIO VIRTUAL</strong><small>DE QUÍMICA</small></span></a><p>Um ambiente para explorar, experimentar e compreender as transformações da matéria.</p><a href="#inicio" class="back-top">VOLTAR AO TOPO ↑</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Laboratório Virtual de Química</span><span>Material educacional • Simulações didáticas</span></div>
+  </footer>
+
+  <div class="modal-backdrop" id="experimentModal" aria-hidden="true">
+    <section class="experiment-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header"><div><div class="section-kicker" id="modalKicker">BANCADA VIRTUAL</div><h2 id="modalTitle">Experimento</h2></div><button class="close-modal" id="closeModal" aria-label="Fechar">×</button></div>
+      <div class="modal-body" id="modalBody"></div>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
